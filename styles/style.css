@@ -1,8 +1,24 @@
+body {
+  margin-top: 50px;
+}
 .count-nav,
-.clock {
+.clock, .message {
   width: 700px;
   margin: 0 auto;
   text-align: center;
+}
+.message {
+  background-color: rgba(224, 50, 56, 0.5);
+  position: relative;
+  top: -385px;
+  display: none;
+}
+.show {
+  display: block;
+}
+.message p {
+  padding: 50px 0;
+  font-size: 32px;
 }
 .count-nav button {
   height: 100px;
@@ -13,13 +29,13 @@
   margin: 0 5%;
 }
 .clock {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .clock .border {
   position: relative;
   height: 400px;
   width: 400px;
-  background-image: url('/images/clock-bg.png');
+  background-image: url('../images/clock-border.png');
   background-size: 100% 100%;
   margin-left: 150px;
 }
@@ -27,7 +43,7 @@
   position: absolute;
   height: 106px;
   width: 6px;
-  background-image: url('/images/clock-min.png');
+  background-image: url('../images/clock-min.png');
   left: 49.5%;
   top: 23.7%;
   z-index: 2;
@@ -39,7 +55,7 @@
   position: absolute;
   height: 188px;
   width: 22px;
-  background-image: url('/images/clock-sec.png');
+  background-image: url('../images/clock-sec.png');
   left: 47.5%;
   top: 16.6%;
   z-index: 3;
@@ -65,4 +81,9 @@
   100% {
     transform: rotate(360deg);
   }
+}
+footer p {
+  position: fixed;
+  right: 1px;
+  bottom: 1px;
 }
