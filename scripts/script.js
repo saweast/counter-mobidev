@@ -4,11 +4,11 @@ var startButton = document.getElementById('start'),
     stopButton = document.getElementById('stop'),
     clockMin = document.getElementById('minutes'),
     clockSec = document.getElementById('seconds'),
-    msec = 0,
+    message = document.getElementsByClassName('message')[0];
+var msec = 0,
     sec = 0,
     min = 0,
     timeout,
-    message = document.getElementsByClassName('message')[0],
     msg = '';
 
 function add() {
